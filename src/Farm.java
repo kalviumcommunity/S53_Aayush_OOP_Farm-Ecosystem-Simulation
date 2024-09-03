@@ -3,22 +3,15 @@ import animals.Sheep;
 
 public class Farm {
     public static void main(String[] args) {
-        Cow cow1 = new Cow("Bessie", 5, 10.5);
-        Cow cow2 = new Cow("Daisy", 4, 8.2);
+        Cow[] cowHerd = new Cow[3];
 
-        Sheep sheep1 = new Sheep("Wooly", 3, 5.5);
-        Sheep sheep2 = new Sheep("Fluffy", 4, 6.3);
+        cowHerd[0] = new Cow("Bessie", 5, 10.5);
+        cowHerd[1] = new Cow("Daisy", 4, 8.2);
+        cowHerd[2] = new Cow("Molly", 6, 12.0);
 
-        cow1.displayDetails();
-        cow1.graze();
-
-        cow2.displayDetails();
-        cow2.graze();
-        
-        sheep1.displayDetails();
-        sheep1.graze();
-
-        sheep2.displayDetails();
-        sheep2.graze();
-    }
+        for (int i = 0; i < cowHerd.length; i++) {
+            System.out.println("Cow " + (i + 1) + " details:");
+            cowHerd[i].displayDetails();
+        }
+   }
 }
