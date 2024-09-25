@@ -31,4 +31,8 @@ public class Cow extends Animal {
     public static int getTotalCows() {
         return totalCows;
     }
+
+    public static void displayTotalCows() {
+        System.out.println("Total number of cows: " + totalCows);
+    }
 }
