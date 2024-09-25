@@ -2,10 +2,12 @@ package animals;
 
 public class Sheep extends Animal {
     private double woolProduction;
+    private static int totalSheep = 0;
 
     public Sheep(String name, int age, double woolProduction) {
         super(name, age);
         this.woolProduction = woolProduction;
+        totalSheep++;
     }
 
     @Override
@@ -24,5 +26,9 @@ public class Sheep extends Animal {
 
     public void setWoolProduction(double woolProduction) {
         this.woolProduction = woolProduction;
+    }
+
+    public static int getTotalSheep() {
+        return totalSheep;
     }
 }
