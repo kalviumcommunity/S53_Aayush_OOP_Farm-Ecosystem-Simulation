@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        Farm farm = new Farm(); // Create an instance of Farm to access its methods
+        Farm farm = new Farm();
 
         while (true) {
             System.out.println("\nWelcome to the Farm!");
