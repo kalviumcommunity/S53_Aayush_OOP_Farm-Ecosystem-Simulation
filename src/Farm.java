@@ -12,19 +12,22 @@ public class Farm {
         sheepHerd[0] = new Sheep("Lamb", 2, 15.0);
         sheepHerd[1] = new Sheep("Ewe", 3, 20.0);
 
-        System.out.println("Cow Herd Details:");
-        for (Cow cow : cowHerd) {
-            cow.displayDetails();
-        }
-        System.out.println("---------------------------");
-        System.out.println("Total Cows: " + Cow.getTotalCows());
-        System.out.println("---------------------------");
-        System.out.println("Sheep Herd Details:");
-        for (Sheep sheep : sheepHerd) {
-            sheep.displayDetails();
-        }
-        System.out.println("---------------------------");
-        System.out.println("Total Sheep: " + Sheep.getTotalSheep());
-        System.out.println("---------------------------");
+//        System.out.println("Cow Herd Details:");
+//        for (Cow cow : cowHerd) {
+//            cow.displayDetails();
+//        }
+//        System.out.println("---------------------------");
+//        System.out.println("Total Cows: " + Cow.getTotalCows());
+//        System.out.println("---------------------------");
+//        System.out.println("Sheep Herd Details:");
+//        for (Sheep sheep : sheepHerd) {
+//            sheep.displayDetails();
+//        }
+//        System.out.println("---------------------------");
+//        System.out.println("Total Sheep: " + Sheep.getTotalSheep());
+//        System.out.println("---------------------------");
+
+        Cow.displayTotalCows();
+        Sheep.displayTotalSheep();
     }
 }
