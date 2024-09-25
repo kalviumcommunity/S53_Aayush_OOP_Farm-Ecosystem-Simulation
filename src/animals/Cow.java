@@ -2,12 +2,15 @@ package animals;
 
 public class Cow extends Animal {
     private double milkProduction;
+    private static int totalCows = 0;
 
     public Cow(String name, int age, double milkProduction) {
         super(name, age);
         this.milkProduction = milkProduction;
+        totalCows++;
     }
 
+    @Override
     public void displayDetails() {
         super.displayDetails();
         System.out.println("Milk Production: " + milkProduction + " liters per day");
@@ -23,5 +26,9 @@ public class Cow extends Animal {
 
     public void setMilkProduction(double milkProduction) {
         this.milkProduction = milkProduction;
+    }
+
+    public static int getTotalCows() {
+        return totalCows;
     }
 }
