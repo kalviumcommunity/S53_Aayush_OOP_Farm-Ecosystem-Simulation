@@ -4,6 +4,12 @@ public class Sheep extends Animal {
     private double woolProduction;
     private static int totalSheep = 0;
 
+    public Sheep() {
+        super();
+        this.woolProduction = 1.0;
+        totalSheep++;
+    }
+
     public Sheep(String name, int age, double woolProduction) {
         super(name, age);
         this.woolProduction = woolProduction;

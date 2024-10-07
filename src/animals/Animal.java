@@ -4,6 +4,10 @@ public class Animal {
     private String name;
     private int age;
 
+    public Animal() {
+        this.name = "Sample Animal";
+        this.age = 5;
+    }
     public Animal(String name, int age) {
         this.name = name;
         this.age = age;

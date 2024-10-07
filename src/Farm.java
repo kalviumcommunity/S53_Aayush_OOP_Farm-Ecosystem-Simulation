@@ -7,12 +7,12 @@ public class Farm {
 
     public Farm() {
         cowHerd = new Cow[3];
-        cowHerd[0] = new Cow("Bessie", 5, 10.5);
+        cowHerd[0] = new Cow();
         cowHerd[1] = new Cow("Daisy", 4, 8.2);
         cowHerd[2] = new Cow("Molly", 6, 12.0);
 
         sheepHerd = new Sheep[2];
-        sheepHerd[0] = new Sheep("Lamb", 2, 15.0);
+        sheepHerd[0] = new Sheep();
         sheepHerd[1] = new Sheep("Ewe", 3, 20.0);
     }
 
