@@ -44,4 +44,28 @@ public class Farm {
         System.out.println("1. Cows");
         System.out.println("2. Sheep");
     }
+
+    public void makeAnimalSound(String animalType) {
+        switch (animalType.toLowerCase()) {
+            case "cow":
+                for (Cow cow : cowHerd) {
+                    if (cow != null) {
+                        cow.makeSound();
+                    }
+                }
+                break;
+
+            case "sheep":
+                for (Sheep sheep : sheepHerd) {
+                    if (sheep != null) {
+                        sheep.makeSound();
+                    }
+                }
+                break;
+
+            default:
+                System.out.println("No animals of type " + animalType + " found on the farm.");
+                break;
+        }
+    }
 }

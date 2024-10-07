@@ -1,6 +1,6 @@
 package animals;
 
-public class Animal {
+public abstract class Animal {
     private String name;
     private int age;
 
@@ -8,6 +8,7 @@ public class Animal {
         this.name = "Sample Animal";
         this.age = 5;
     }
+
     public Animal(String name, int age) {
         this.name = name;
         this.age = age;
@@ -18,9 +19,7 @@ public class Animal {
         System.out.println("Animal Age: " + age + " years");
     }
 
-    public void makeSound() {
-        System.out.println(name + " is making a sound!");
-    }
+    public abstract void makeSound();
 
     public String getName() {
         return name;
