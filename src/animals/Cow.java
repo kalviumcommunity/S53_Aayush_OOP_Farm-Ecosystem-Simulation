@@ -17,6 +17,11 @@ public class Cow extends Animal {
     }
 
     @Override
+    public void makeSound() {
+        System.out.println(getName() + " says: Moo!");
+    }
+
+    @Override
     public void displayDetails() {
         super.displayDetails();
         System.out.println("Milk Production: " + milkProduction + " liters per day");

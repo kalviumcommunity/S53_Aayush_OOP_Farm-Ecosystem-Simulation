@@ -17,6 +17,11 @@ public class Sheep extends Animal {
     }
 
     @Override
+    public void makeSound() {
+        System.out.println(getName() + " says: Baa!");
+    }
+
+    @Override
     public void displayDetails() {
         super.displayDetails();
         System.out.println("Wool Production: " + woolProduction + " kilograms per year");
