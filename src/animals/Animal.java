@@ -14,10 +14,7 @@ public abstract class Animal {
         this.age = age;
     }
 
-    public void displayDetails() {
-        System.out.println("Animal Name: " + name);
-        System.out.println("Animal Age: " + age + " years");
-    }
+    public abstract void displayDetails();
 
     public abstract void makeSound();
 

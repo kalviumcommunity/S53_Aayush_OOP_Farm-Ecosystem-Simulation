@@ -23,7 +23,6 @@ public class Sheep extends Animal {
 
     @Override
     public void displayDetails() {
-        super.displayDetails();
         System.out.println("Wool Production: " + woolProduction + " kilograms per year");
     }
 
@@ -43,7 +42,7 @@ public class Sheep extends Animal {
         return totalSheep;
     }
 
-    public static void displayTotalSheep() {
+    public static void getTotalSheepDisplay() {
         System.out.println("Total number of sheep: " + totalSheep);
     }
 }

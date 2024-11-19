@@ -23,7 +23,6 @@ public class Cow extends Animal {
 
     @Override
     public void displayDetails() {
-        super.displayDetails();
         System.out.println("Milk Production: " + milkProduction + " liters per day");
     }
 
