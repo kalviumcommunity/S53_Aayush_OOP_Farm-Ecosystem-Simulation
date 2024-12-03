@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        Farm farm = new Farm();
+        FarmService farmService = new FarmService();
 
         while (true) {
             System.out.println("\nWelcome to the Farm!");
@@ -18,21 +18,20 @@ public class Main {
             int choice = scanner.nextInt();
             scanner.nextLine();
 
-
             switch (choice) {
                 case 1:
-                    farm.displayTotalAnimals();
+                    farmService.displayTotalAnimals();
                     break;
                 case 2:
-                    farm.displayAnimalDetails();
+                    farmService.displayAnimalDetails();
                     break;
                 case 3:
-                    farm.displayAnimalTypes();
+                    farmService.displayAnimalTypes();
                     break;
                 case 4:
                     System.out.print("Enter the animal type (Cow/Sheep): ");
                     String animalType = scanner.nextLine().trim();
-                    farm.makeAnimalSound(animalType);
+                    farmService.makeAnimalSound(animalType);
                     break;
                 case 5:
                     System.out.println("Exiting the program. Goodbye!");
